@@ -10,6 +10,20 @@ const homeRouter = require('./routes/homeRouter');
 const amenitiesRouter = require('./routes/amenitiesRouter');
 const contactusRouter = require('./routes/contactusRouter');
 
+const mongoose = require('mongoose');
+
+const url = 'mongodb://localhost:27017/kenmar';
+const connect = mongoose.connect(url, {
+    useCreateIndex: true,
+    useFindAndModify: false,
+    useNewUrlParser: true, 
+    useUnifiedTopology: true
+});
+
+connect.then(() => console.log('Connected correctly to server'), 
+    err => console.log(err)
+);
+
 const app = express();
 
 // view engine setup

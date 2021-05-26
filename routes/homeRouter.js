@@ -1,4 +1,5 @@
 const express = require('express');
+
 const homeRouter = express.Router();
 
 homeRouter.route('/')
@@ -8,7 +9,7 @@ homeRouter.route('/')
     next();
 })
 .get((req, res) => {
-    res.end('Welcome to Kenmar Apartment, Tacoma');
+    res.end('Home - Welcome to Kenmar Apartment, Tacoma');
 })
 .post((req, res) => {
     res.end('POST operation not supported on /home');

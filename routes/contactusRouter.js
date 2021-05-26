@@ -11,7 +11,7 @@ contactusRouter.route('/')
     res.end('Welcome to Kenmar Apartment, Tacoma');
 })
 .post((req, res) => {
-    res.end('POST operation not supported on /contactus');
+    res.end(`Will add firstname: ${req.body.firstname}, lastname: ${req.body.lastname} phone: ${req.body.phone}`);
 })
 .put((req, res) => {
     res.statusCode = 403;
