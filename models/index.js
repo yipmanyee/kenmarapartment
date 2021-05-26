@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Kenmar = require('./models/kenmar');
 
-const url = 'mongodb://localhost:27017/portfolio';
+const url = 'mongodb://localhost:27017/kenmar';
 const connect = mongoose.connect(url, {
     useCreateIndex: true,
     useNewUrlParser: true,

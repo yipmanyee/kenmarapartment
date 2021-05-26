@@ -14,8 +14,8 @@ const kenmarSchema = new Schema({
     image: {
         type: String,
         required: true
-    },
-    timestamps: true
+    }
+    
 });
 
 const Kenmar = mongoose.model('Kenmar', kenmarSchema);
